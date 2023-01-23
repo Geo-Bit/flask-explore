@@ -1,4 +1,5 @@
 # Run app with flask --app flaskr --debug run
+# Activate virtual env with source venv/bin/activate
 
 import os
 

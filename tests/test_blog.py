@@ -65,7 +65,7 @@ def test_update(client, auth, app):
         post = db.execute('SELECT * FROM post WHERE id = 1').fetchone()
         assert post['title'] == 'updated'
 
-@pytest.mark.parameterize('path',(
+@pytest.mark.parametrize('path',(
     '/create',
     '/1/update',
 ))
